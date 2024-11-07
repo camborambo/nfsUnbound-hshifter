@@ -5,6 +5,9 @@ The original mod worked great for Heat but not Unbound. I made 2 changes to make
 1. Changed the memory scanning process to find NFS unbound executable instead of heat.
 2. Changed the memory scanning to give results for addresses ending with 4. These are the addresses that works for Unbound.
 
+Issue:
+Unfortunately, you will have to rescan and go through the process if you change the car in-game. The address changes when the car is changed.
+
 You can still use Cheat engine to scan for the address and input it manually but look for addresses that ends with 4, not 8.
 
 
