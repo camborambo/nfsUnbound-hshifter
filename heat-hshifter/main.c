@@ -44,7 +44,7 @@ DWORD getpid(void) {
     }
 
     while (Process32Next(snapshot, &entry)) {
-        if (0 == wcscmp(entry.szExeFile, L"NeedForSpeedHeat.exe")) {
+        if (0 == wcscmp(entry.szExeFile, L"NeedForSpeedUnbound.exe")) {
             pid = entry.th32ProcessID;
             break;
         }
@@ -185,11 +185,11 @@ int main(void) {
     heatproc.pid = getpid();
 
     if (0 == heatproc.pid) {
-        fprintf(stderr, "[-] Unable to find 'NeedForSpeedHeat.exe' process\n");
+        fprintf(stderr, "[-] Unable to find 'NeedForSpeedUnbound.exe' process\n");
         return EXIT_FAILURE;
     }
 
-    printf("[+] Found NeedForSpeedHeat.exe -> PID: %u\n\n", heatproc.pid);
+    printf("[+] Found NeedForSpeedUnbound.exe -> PID: %u\n\n", heatproc.pid);
 
     while (0 == heatproc.gearaddr) {
         puts("[*] Automatic memory scan can TEMPORARILY consume huge amount of RAM!");
