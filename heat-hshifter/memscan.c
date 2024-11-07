@@ -180,7 +180,7 @@ void print_matches(MEMBLOCK *mb_list, int data_size, uintptr_t *result_addr, UIN
         for (offset = 0; offset < mb->size; offset += mb->data_size) {
             if (IS_IN_SEARCH(mb, offset)) {
                 uintptr_t val = peek(mb->hProc, mb->data_size, (uintptr_t) mb->addr + offset);
-                if (8 == (((uintptr_t) mb->addr + offset) & 0x00000000F)) {
+                if (4 == (((uintptr_t) mb->addr + offset) & 0x00000000F)) {
                     if (nmatches < 18) {
                         result_addr[nmatches] = ((uintptr_t) mb->addr + offset);
                     }
