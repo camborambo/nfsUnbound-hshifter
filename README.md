@@ -1,11 +1,19 @@
-# H-Shifter support for Need for Speed Heat
+# H-Shifter support for Need for Speed Unbound
+
+The original mod worked great for Heat but not Unbound. I made 2 changes to make this program work for Unbound.
+
+1. Changed the memory scanning process to find NFS unbound executable instead of heat.
+2. Changed the memory scanning to give results for addresses ending with 4. These are the addresses that works for Unbound.
+
+You can still use Cheat engine to scan for the address and input it manually but look for addresses that ends with 4, not 8.
+
+
+----- Notes from original creator ----------
 
 Since NFS Heat for some reason doesn't support shifters at all, this program makes it possible!  
 You can use a shifter with up-to 8 gears.  
 
 Since I didn't have the patience to find static pointer (offset) to the one memory address that's required for this (either Frostbite engine or Denuvo or both being difficult.. that said, if a kind soul has the time to RE Heat and provide this address, please please please hit me up!), this program supports either manually supplying the memory address that you can easily find with Cheat Engine, or an automatic memory scanner that will do this for you easily.   
-
-**[DOWNLOAD PROGRAM HERE](https://github.com/x0reaxeax/nfsheat-hshifter/releases/latest)**
 
 **[VIDEO GUIDE](https://www.youtube.com/watch?v=t9aC8s_3zog)**
 
